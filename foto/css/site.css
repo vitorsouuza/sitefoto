@@ -1,0 +1,262 @@
+:root{
+    --color--corprincipal: #F54EF5;
+    --color--preto: black;
+    --color--oferta: #3682FD;
+    --color--branca: white;
+    --color--valor: #2CA469;
+    --color--valorparc: #4DB68A;
+    --color--textos: #383838;
+    --color--neon:#361136;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all .5s;
+}
+
+/* Estilizando cima */
+
+header{
+    background-color: var(--color--corprincipal);
+    text-decoration: none;
+}
+
+#cima #logo img{
+    width: 100px;
+    height: 100px;
+}
+
+/* barra de pesquisa */
+#divBusca{
+    background-color:rgba(255, 255, 255, 0.633);
+    border:solid 2px white;
+    border-radius:10px;
+    width:290px;
+    height:32px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:205px;
+  }
+  
+  #btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:50px;
+    font-weight:bold;
+    background:rgba(255, 255, 255, 0.633);
+  }
+  
+  #divBusca img{
+    float:left;
+    width: 30px;
+    height: 30px;
+}
+
+  #cima{
+    
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:center;
+    align-items:center;
+    margin: 0px 20px;
+    border-bottom: solid 2px black;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+
+  #cima nav a{
+    
+    text-decoration: none;
+    color: var(--color--preto);
+    margin: 20px;
+    text-decoration: none;
+  }
+
+  #cima nav a:hover{
+    color: antiquewhite;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+/* Estilizando baixo */
+
+#baixo ul, #ofertassemanais ul, #ofertasdois #terceiro{
+    display: flex;
+    column-gap: normal;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    overflow: auto;
+}
+
+#baixo ul, #ofertassemanais ul{ 
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+#baixo ul li, #ofertassemanais ul li{
+    display: flex;
+    padding: 20px;
+}
+
+#baixo ul li:hover, #ofertassemanais ul li:hover{
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* ofertas  */
+
+h3{
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+
+    
+
+main #ofertas #produtos div{
+    
+    border: solid 2px var(--color--neon);
+    border-radius: 0px;
+    margin: 0;
+}
+
+.ofertas{
+
+    background-color: var(--color--oferta);
+    color: var(--color--branca);
+    width: 90px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.verde{
+    color: var(--color--valorparc);
+    font-size: 20px;
+    
+}
+
+.frete{
+    font-weight: bold;
+    color: var(--color--valor);
+    font-size: 13px;
+}
+
+.produto{
+    color: var(--color--textos);
+}
+
+.imgcamera, #ofertasdois img{
+    width: 150px;
+    height: 130px;
+    margin: 5px 25px;
+    
+}
+.imgn{
+    display: flex;
+    width: 181px;
+    height: 101px;
+}
+.imgp{
+    display: flex;
+    width: 181px;
+    height: 101px;
+    margin: 0px 0px;
+}
+
+#produtos{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 53px;
+}
+
+
+.margin {
+    
+    margin: 0px 50px;
+}
+
+.juros{
+    color: var(--color--valorparc);
+    font-size: 19px;
+}
+
+/* Ofertas semanais */
+
+/* #ofertassemanais{
+    background-color: rgba(255, 0, 0, 0.689);
+} */
+#ofertassemanais h3{
+    text-align: center;
+}
+
+#ofertassemanais li img {
+    display: block;
+}
+
+/* ultima parteeeeeee */
+
+#ofertasdois{
+    background-color: rgba(0, 0, 0, 0.175);
+    height: 400px;
+}
+
+
+#ofertasdois #terceiro div{
+    background-color: var(--color--branca);
+    border-radius: 20px;
+ }
+
+ #ofertasdois h3{
+    margin: 50px 0px;
+ }
+
+.nav{
+    text-align: center;
+    padding: 20px;
+}
+.nav:hover{
+    font-size: 20px;
+}
+
+
+/* footer */
+
+footer{
+    color: antiquewhite;
+    background-color: var(--color--corprincipal);
+    background-repeat: no-repeat;
+    
+}
+
+footer #palavras{
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p:hover{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 20px;
+    transition: all 1s;
+}
